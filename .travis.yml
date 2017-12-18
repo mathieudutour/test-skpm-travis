@@ -1,0 +1,16 @@
+os: osx
+
+language: node_js
+
+node_js:
+  - "node"
+
+before_install:
+  - brew update
+  - brew outdated sketch || brew upgrade sketch
+  - npm i
+
+cache:
+  directories:
+    - "node_modules"
+    - $HOME/Library/Caches/Homebrew
