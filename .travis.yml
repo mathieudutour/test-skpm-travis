@@ -8,7 +8,8 @@ node_js:
 before_install:
   - brew update
   - brew cask install sketch # install Sketch
-  - mkdir -p /Library/App Support/com.bohemiancoding.sketch3 && echo $SKETCH_LICENSE > /Library/App Support/com.bohemiancoding.sketch3/.deployment # add the Sketch license
+  - mkdir -p ~/Library/Application Support/com.bohemiancoding.sketch3 # create support folder
+  - echo $SKETCH_LICENSE > ~/Library/Application Support/com.bohemiancoding.sketch3/.deployment # add the Sketch license
 
 cache:
   directories:
@@ -19,4 +20,4 @@ script:
   - npm run test -- --app=/Applications/Sketch.app
 
 after_script:
-  - rm /Library/App Support/com.bohemiancoding.sketch3/.deployment
+  - rm ~/Library/App Support/com.bohemiancoding.sketch3/.deployment
