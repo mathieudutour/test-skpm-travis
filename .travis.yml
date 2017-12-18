@@ -18,7 +18,7 @@ cache:
     - $HOME/Library/Caches/Homebrew
 
 script:
-  - npm run test -- --app=/Applications/Sketch.app
+  - npm run test
 
 after_script:
   - rm "~/Library/App Support/com.bohemiancoding.sketch3/.deployment" # remove the Sketch license
