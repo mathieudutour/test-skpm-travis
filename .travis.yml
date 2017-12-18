@@ -8,7 +8,9 @@ node_js:
 before_install:
   - brew update
   - brew cask outdated sketch || brew cask upgrade sketch
-  - npm i
+  - brew cask list
+  - mdfind kMDItemCFBundleIdentifier == 'com.bohemiancoding.sketch3'
+  - ls /Applications
 
 cache:
   directories:
