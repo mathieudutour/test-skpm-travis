@@ -7,7 +7,7 @@ node_js:
 
 before_install:
   - brew update
-  - brew cask outdated sketch || brew cask upgrade sketch
+  - brew cask install sketch || ([ -z "$(brew cask outdated sketch)"] && brew cask install sketch)
   - brew cask list
   - mdfind kMDItemCFBundleIdentifier == 'com.bohemiancoding.sketch3'
   - ls /Applications
