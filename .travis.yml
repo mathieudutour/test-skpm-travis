@@ -7,7 +7,7 @@ node_js:
 
 before_install:
   - brew update
-  - brew outdated sketch || brew upgrade sketch
+  - brew cask outdated sketch || brew cask upgrade sketch
   - npm i
 
 cache:
