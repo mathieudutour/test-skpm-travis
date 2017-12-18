@@ -14,7 +14,7 @@
     "watch": "skpm-build --watch",
     "start": "skpm-build --watch --run",
     "postinstall": "npm run build && skpm-link || true",
-    "test": "skpm-test --app=/Applications/Sketch.app"
+    "test": "skpm-test"
   },
   "devDependencies": {
     "@skpm/builder": "^0.2.0",
