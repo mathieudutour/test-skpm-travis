@@ -2,6 +2,9 @@ os: osx
 
 language: node_js
 
+node_js:
+  - "node"
+
 before_install:
   - brew update
   - brew cask install sketch # install Sketch
