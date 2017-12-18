@@ -18,6 +18,6 @@
   },
   "devDependencies": {
     "@skpm/builder": "^0.2.10",
-    "@skpm/test-runner": "^0.1.7"
+    "@skpm/test-runner": "^0.1.9"
   }
 }
