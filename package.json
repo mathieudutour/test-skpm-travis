@@ -17,7 +17,7 @@
     "test": "skpm-test"
   },
   "devDependencies": {
-    "@skpm/builder": "^0.2.0",
-    "@skpm/test-runner": "^0.1.6"
+    "@skpm/builder": "^0.2.10",
+    "@skpm/test-runner": "^0.1.7"
   }
 }
